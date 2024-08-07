@@ -1,0 +1,21 @@
+Base:
+  RunMode: debug
+  HTTPPort: 8888
+  ReadTimeout:  100
+  WriteTimeout: 100
+  PageSize: 10
+  JwtSecret:  default
+Db:
+  #表生成前缀
+  Prefix: im
+  DriverName: mysql
+  DBUrl: dbforblog:dbforblog@tcp(ip:port)/dbforblog?charset=utf8
+Redis:
+  RedisHost:
+  RedisDB: 1
+  RedisPwd:
+  Timeout: 20
+  PoolMaxIdle: 10
+  PoolMaxActive: 1
+  PoolIdleTimeout: 5
+  PoolWait: true
