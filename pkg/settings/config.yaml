@@ -1,0 +1,23 @@
+Base:
+  RunMode: debug
+  HTTPPort: 8888
+  ReadTimeout:  100
+  WriteTimeout: 100
+  PageSize: 10
+  JwtSecret:  default
+  CpuMaxProcess: -1
+Db:
+  #表生成前缀
+  Prefix : TL_
+  DriverName: mysql
+  #user=postgres password=1qaz2wsx dbname=postgres host=10.168.1.164 port=5432 sslmode=disable
+  DBUrl: hotData:hotdata1234@tcp(47.97.2.61:53306)/hotData?charset=utf8mb4
+Redis:
+  RedisHost: 192.168.100.23:6379
+  RedisDB: 7
+  RedisPwd: 123456
+  Timeout: 20
+  PoolMaxIdle: 10
+  PoolMaxActive: 1
+  PoolIdleTimeout: 5
+  PoolWait: true
